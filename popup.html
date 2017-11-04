@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      h2{
+        font-size: 12px;
+      }
+
+      #container {
+        align-items: center;
+        justify-content: space-between;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>Daily Danish</h1>
+    <div id="container">
+      <input type="range" min="0" max="1" value="1" step="1">
+      <h2>Frequency</h2>
+      <input type="range" min="0" max="4" value="2" step="1" id="interval">
+      <span>Every <span id="interval_label">20 minutes</span></span>
+      <button id="test">Test</button>
+    </div>
+  </body>
+</html>
